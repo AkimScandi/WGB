@@ -13,7 +13,7 @@
     --header-nav-height: 50px;
     --header-logo-width: 200px;
     --header-logo-height: calc(var(--header-height) - 30px);
-    
+
     --navigation-tabs-background: var(--secondary-light-color);
 
     @include tablet {
@@ -228,10 +228,15 @@
             }
 
             &_minicart {
+                top: 1px;
                 @include minicart-button;
 
                 &.Header-Button_isVisible {
                     width: 100%;
+                }
+
+                & > span {
+                    top: 2px;
                 }
 
                 @include after-mobile {
